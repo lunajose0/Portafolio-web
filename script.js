@@ -1,13 +1,13 @@
 let currentSlide = 0;
 
-    function showSlide(index) {
+    function showSlide(sobre_mi) {
         const slides = document.querySelectorAll('.slide');
-        if (index >= slides.length) {
+        if (sobre_mi >= slides.length) {
             currentSlide = 0;
-        } else if (index < 0) {
+        } else if (sobre_mi < 0) {
             currentSlide = slides.length - 1;
         } else {
-            currentSlide = index;
+            currentSlide = sobre_mi;
         }
         const offset = -currentSlide * 100; // Calcula el desplazamiento
         document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
