@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi Portafolio</h1>
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="sobre_mi.html">Sobre mí</a></li>
+        <li><a href="estudios.html">Estudios</a></li>
+        <li><a href="trabajos.html">Trabajos</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section id="about" class="about-container">
+        <img src="imagenes/perfil/my_foto.jpg" alt="perfil" class="about-image">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <p>Soy un desarrollador web apasionado por aprender y resolver problemas de manera práctica. A lo largo de mi experiencia, he trabajado en proyectos utilizando herramientas como PHP, Excel y JSON, explorando formas creativas de implementar soluciones sin depender de servidores tradicionales. Me gusta enfrentar desafíos que me permitan demostrar mis habilidades y encontrar métodos innovadores para hacer las cosas más eficientes.</p>
+                </div>
+                <div class="slide">
+                    <p>Actualmente, estoy ampliando mis conocimientos en tecnologías como Kotlin, React, Node, TypeScript, Angular y Flutter. Mi enfoque está en dominar Flutter, ya que quiero desarrollar aplicaciones móviles con una experiencia visual y funcional impecable. Creo que siempre hay algo nuevo por aprender, y cada proyecto es una oportunidad para mejorar y crecer profesionalmente.</p>
+                </div>
+                <div class="slide">
+                    <p>Mi objetivo es que cada trabajo que realizo sea un reflejo de mi compromiso con la calidad y la atención al detalle. Si bien disfruto de la parte técnica, también valoro mucho la colaboración con otras personas y aprender de sus perspectivas.</p>
+                </div>
+                <div class="slide">
+                    <p>Si estás aquí, probablemente busques a alguien que pueda transformar ideas en realidad. Estoy listo para escuchar, aportar soluciones y trabajar contigo en lo que necesites. Te invito a explorar mi portafolio y conocer más sobre lo que hago.</p>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Jose Luna |   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=josejavier.farias@gmail.com" target="_blank">josejavier.farias@gmail.com</a>  |  <a href="https://github.com/lunajose0" target="_blank"> Github </a>  |  <a href="https://www.linkedin.com/in/jose-luna-br10/" target="_blank"> LinkedIn </a>  |</p>
+      </footer>
+    </body>
+    <script src="script.js"></script>
+    </html>

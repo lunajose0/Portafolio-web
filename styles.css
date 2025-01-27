@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/fondo.gif') ;
+    background-size: cover;
+}
+
+header {
+   /* background: #404040;*/
+    color: #fff;
+    padding: 10px 0; /* Aumentar el padding para dar más espacio */
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre el título y la barra de navegación */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section {
+    text-align: justify;
+    line-height: 1.6;
+    text-indent: 2em;
+    margin: 0 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1px 0; /* Ajustar el padding */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 50%; /* Centrar el pie de página */
+    transform: translateX(-50%); /* Ajustar la posición */
+    width: 100%; /* Ancho del pie de página */
+}
+
+footer p a {
+    color: #fff;
+}
+
+
+
+.about-image {
+    width: 200px; /* Ajusta el ancho según tu imagen */
+    height: 210px;
+    margin-top: 100px; /* Ajusta el margen superior */
+    margin-right: 50px; /* Espacio entre la imagen y el texto */
+    border-radius: 10%; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.374); /* Sombra para dar profundidad */
+}
+
+
+
+
+
+
+
+
+.about-container{
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0;
+    text-align: center; /* Centra el texto */
+}
+
+
+.slider {
+    margin-top: 100px;
+    position: relative;
+    max-width: 600px; /* Ajusta el ancho máximo del slider */
+    max-height: 300px; /* Ajusta la altura máxima del slider */
+    width: 100%; /* Asegura que el slider ocupe el 100% del ancho disponible */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    background-color: rgba(255, 255, 255, 0.182); /* Fondo blanco con algo de transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.374); /* Sombra para dar profundidad */
+}
+
+.slides {
+    display: flex; /* Muestra las diapositivas en línea */
+    transition: transform 0.5s ease; /* Transición suave al cambiar de diapositiva */
+}
+
+.slide {
+    min-width: 100%; /* Cada diapositiva ocupa el 100% del ancho del slider */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente el contenido */
+    margin-top: -45px;
+    color: #ffffff;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px; /* Bordes redondeados para los botones */
+}
+
+.prev {
+    left: 10px; /* Posición del botón anterior */
+}
+
+.next {
+    right: 10px; /* Posición del botón siguiente */
+}
+
+.slider .slide p {
+    
+    padding: 80px; /* Agrega un poco de espacio alrededor del texto */
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el tamaño total */
+}
+
+
+
+
+
+
+#study{
+
+   margin-top: 20px;
+   margin-left: 265px;
+}
+
+
+.image {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+}
+
+.download-link {
+    display: block;
+    margin-top: 10 px;
+    font-size: 14px;
+}
+
+.text-area{
+
+    margin-top: -10px;
+}
+
+.container_study {
+color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 800px; /* Limita el ancho máximo de los contenedores */
+    width: 100%; /* Asegura que los contenedores ocupen el 100% del ancho permitido */
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 1px solid #000000
+}
+
+.text-area a{
+    color:#fff
+}
+
+.image{
+    margin-top: 0%;
+    width: 20%;
+
+}
+
+
+
+
+
+
+
+
+
+.cuadro-image{
+   border-radius: 5px;
+   margin-left: -32px;
+   width: 50%;
+   height: 50%;
+   border: 1px solid #000000;
+}
+
+.cuadro-container{
+    margin-left: 20%;
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.216);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.main-container {
+    
+    /*background-color: saddlebrown;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los contenedores */
+    padding: 20px;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0;
+    text-align: center; /* Centra el texto */
+}
