@@ -171,18 +171,22 @@ footer p a {
     border: 1px solid #000000;
     padding: 20px; /* Añade padding al contenedor de estudio */
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .text-area {
     margin-top: 10px;
 }
 
-.text-area a {
+
+
+.download-link{
     color: #fff;
+    margin: 10px auto;
 }
 
 .image {
-    max-width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+    max-width: 30%; /* La imagen ocupa todo el ancho de su contenedor */
     height: auto;
     margin: 10px auto; /* Centra la imagen */
     display: block;
