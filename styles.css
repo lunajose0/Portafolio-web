@@ -53,6 +53,7 @@ nav ul li a:hover {
 section {
     padding: 20px; /* Añade padding a la sección */
     flex: 1; /* Permite que la sección ocupe el espacio disponible */
+    box-sizing: border-box;
 }
 
 section h2 {
