@@ -237,17 +237,6 @@ footer p a {
 
 
 
-/* Estilos para el contenedor del PDF */
-.pdf-container {
-    max-width: 80%;          /* Limita el ancho máximo */
-    width: 100%;             /* Se adapta al contenedor padre */
-    margin: 20px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f92c;
-    border-radius: 15px;
-    overflow: hidden;        /* Evita desbordamientos */
-}
 
 
 /* Estilos para el contenedor del PDF */
