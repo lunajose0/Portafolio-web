@@ -97,13 +97,14 @@ footer p a {
 }
 
 .slider {
-    margin: 20px auto; /* Centra el slider */
+    margin: 20px auto;
     max-width: 600px;
     width: 100%;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.182);
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.374);
+    position: relative; /* Necesario para posicionar los botones absolutamente */
 }
 
 .slides {
@@ -115,23 +116,22 @@ footer p a {
     min-width: 100%;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Apila el contenido del slide verticalmente */
+    flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centra el contenido del slide */
-    padding: 20px; /* Añade padding al slide */
+    justify-content: center;
+    padding: 20px;
     color: #ffffff;
 }
 
 .slider .slide p {
-    padding: 20px; /* Ajusta el padding del texto del slide */
+    padding: 20px;
     box-sizing: border-box;
-    text-align: center; /* Centra el texto del slide */
+    text-align: center;
 }
 
-
-button {
+.prev, .next {  /* Estilos comunes para ambos botones */
     position: absolute;
-    top: 50%;
+    top: 50%; /* Centrado verticalmente */
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
@@ -139,16 +139,21 @@ button {
     padding: 10px;
     font-size: 18px;
     border-radius: 5px;
-    z-index: 1; /* Asegura que los botones estén por encima del slider */
+    z-index: 1;
+    /* Nuevos estilos para mejor responsividad y posicionamiento */
+    width: 40px; /* Ancho fijo para los botones */
+    text-align: center; /* Centrar el texto (flecha) dentro del botón */
+    line-height: 1; /* Ajustar la altura de línea para centrar verticalmente */
 }
 
 .prev {
-    left: 10px;
+    left: 0.02%; /* Espacio desde la izquierda */
 }
 
 .next {
-    right: 10px;
+    right: 0.02%; /* Espacio desde la derecha */
 }
+
 
 #study {
     margin: 20px auto; /* Centra el elemento study */
