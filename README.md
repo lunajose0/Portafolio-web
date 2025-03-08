@@ -33,7 +33,7 @@ Este es mi portafolio web donde presento mi experiencia, estudios y proyectos co
 3. Abre `index.html` en tu navegador. 
 
 ## 🌍 Enlace en producción 
-Puedes ver mi portafolio en línea en [aquí](https://github.com/lunajose0/Portafolio-web)
+Puedes ver mi portafolio en línea en [aquí](https://lunajose0.github.io/Portafolio-web/)
 
 ## 📬 Contacto 
 - 📧 Correo electrónico: [josejavier.farias@gmail.com](Mailto: josejavier.farias@gmail.com) 
