@@ -36,6 +36,6 @@ Este es mi portafolio web donde presento mi experiencia, estudios y proyectos co
 Puedes ver mi portafolio en línea en [aquí](https://github.com/lunajose0/Portafolio-web)
 
 ## 📬 Contacto 
-- 📧 Correo electrónico: [josejavier.farias@gmail.com] (Mailto: josejavier.farias@gmail.com) 
+- 📧 Correo electrónico: [josejavier.farias@gmail.com](Mailto: josejavier.farias@gmail.com) 
 - 💼 LinkedIn: [Jose Luna](https://www.linkedin.com/in/jose-luna-br10/) 
-- 🐙 Github: [Lunajose0] (https://github.com/lunajose0) 
+- 🐙 Github: [Lunajose0](https://github.com/lunajose0) 
