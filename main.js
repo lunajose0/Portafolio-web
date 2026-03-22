@@ -22,7 +22,7 @@
       trail.style.left = trailX + 'px'; trail.style.top = trailY + 'px';
       requestAnimationFrame(animateTrail);
     })();
-    document.querySelectorAll('a, button, .cert-card, .stat-card, .contacto__cta-btn').forEach(el => {
+    document.querySelectorAll('a, button, .cert-card, .stat-card, .contacto__cta-btn, .proyecto-card__browser').forEach(el => {
       el.addEventListener('mouseenter', () => { cursor.classList.add('grow'); trail.classList.add('grow'); });
       el.addEventListener('mouseleave', () => { cursor.classList.remove('grow'); trail.classList.remove('grow'); });
     });
@@ -101,8 +101,21 @@
   }, OPT);
   certCards.forEach(el => certObs.observe(el));
 
+  // Proyecto cards — stagger
+  const proyectoCards = document.querySelectorAll('.proyecto-card');
+  const proyObs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const idx = parseInt(entry.target.dataset.index || '1');
+        setTimeout(() => makeVisible(entry.target), (idx - 1) * 150);
+        proyObs.unobserve(entry.target);
+      }
+    });
+  }, OPT);
+  proyectoCards.forEach(el => proyObs.observe(el));
+
   // General sections
-  const fadeEls = document.querySelectorAll('.section__header, .sobre-mi__grid, .stack__category, .edu__card, .contacto__grid');
+  const fadeEls = document.querySelectorAll('.section__header, .sobre-mi__grid, .stack__category, .edu__card, .contacto__grid, .proyectos__intro');
   fadeEls.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -135,7 +148,7 @@
 
   // HARD FALLBACK: force everything visible after 1.5s no matter what
   setTimeout(() => {
-    document.querySelectorAll('.cert-card, .section__header, .sobre-mi__grid, .stack__category, .edu__card, .contacto__grid, .timeline__item').forEach(el => {
+    document.querySelectorAll('.cert-card, .section__header, .sobre-mi__grid, .stack__category, .edu__card, .contacto__grid, .timeline__item, .proyecto-card, .proyectos__intro').forEach(el => {
       if (el.style.opacity === '0' || el.style.opacity === '') makeVisible(el);
     });
   }, 1500);
